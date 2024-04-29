@@ -2968,7 +2968,58 @@ hr{
     border: none;
     background: #f9f9ff;
 }
-
+.text-black
+{
+    color: #000;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(190, 188, 188, 0.603);
+    height: 100vh;
+    width: 20rem;
+    visibility: hidden;
+    z-index: 2;
+    transform: perspective(200px) rotateX(-15deg) scale(.75);
+}
+.sidevarvisible{
+    animation: showup .4s linear forwards;
+}
+.sidevarhidden{
+    animation: hideup .4s linear forwards;
+}
+.sidebar ul{
+    margin-top: 50%;
+}
+#hamburger{
+    cursor: pointer;
+}
+.sidebar ul li{
+    display: flex;
+    justify-content: center;
+    padding: .2rem;
+}
+@keyframes showup {
+    0% {
+        transform: perspective(200px) rotateX(-15deg) scale(.75);
+        opacity: 0;
+    }
+    100%{
+        transform: perspective(200px) rotateX(0deg) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes hideup {
+    0% {
+        transform: perspective(200px) rotateX(0deg) scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: perspective(200px) rotateX(-15deg) scale(.75);
+        opacity: 0;
+    }
+}
 /*
 ################
                End Blog Details  Page style
