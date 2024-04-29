@@ -101,10 +101,11 @@
     </script>
 </head>
 
-<body>
+<body style="position: relative">
     @include('layouts.header')
+    @include('layouts.sidebar')
     @yield('content')
-    {{-- @include('layouts.footer') --}}
+    @include('layouts.footer')
 
     <script src="{{ asset('js/vendor/jquery-2.2.4.min.js') }}"></script>
     <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
@@ -129,6 +130,21 @@
         integrity="sha512-FIKRFRxgD20moAo96hkZQy/5QojZDAbyx0mQ17jEGHCJc/vi0G2HXLtofwD7Q3NmivvP9at5EVgbRqOaOQb+Rg=="
         data-cf-beacon='{"rayId":"877e499a5b1fa743","b":1,"version":"2024.3.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
         crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', () => {
+            if(document.getElementById('sidebarnav').classList.contains('sidevarvisible')){
+                document.getElementById('sidebarnav').classList.remove('sidevarvisible');
+                document.getElementById('sidebarnav').classList.add('sidevarhidden');
+                setTimeout(() => {
+                    document.getElementById('sidebarnav').style.visibility = 'hidden';
+                }, 400);
+            } else {
+                document.getElementById('sidebarnav').style.visibility = 'visible';
+                document.getElementById('sidebarnav').classList.remove('sidevarhidden');
+                document.getElementById('sidebarnav').classList.add('sidevarvisible');
+            }
+        })
+    </script>
 </body>
 
 <!-- Mirrored from preview.colorlib.com/theme/industry/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2024 15:08:36 GMT -->
