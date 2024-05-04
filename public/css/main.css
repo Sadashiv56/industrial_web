@@ -1589,9 +1589,10 @@ h6 {
     display: inline-block;
     color: #222;
     font-weight: 400;
-    font-size: .9rem ;
+    font-size: 1rem ;
     outline: none;
 }
+
 
 .nav-menu > li {
     margin-left: 10px;
@@ -1758,7 +1759,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-gap {
-    padding: 120px 0;
+    padding: 50px 0;
 }
 
 .primary-btn {
@@ -1930,7 +1931,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 .cat-area .single-cat {
     text-align: center;
 }
+.cat-area h2{
+    border-bottom: 2px var(--secondary-color) solid ;
+    width: 130px;
+    margin-bottom: 1rem;
 
+}
 .cat-area .single-cat p {
     max-width: 280px;
     margin-left: auto;
@@ -2973,7 +2979,7 @@ hr{
     color: #000;
 }
 .sidebar{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     background: rgba(190, 188, 188, 0.603);

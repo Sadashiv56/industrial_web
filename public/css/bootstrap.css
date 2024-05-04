@@ -359,7 +359,10 @@ small,
   padding-right: 15px;
   padding-left: 15px;
 }
-
+.pt-4{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .col-4 {
   flex: 0 0 33.33333%;
   max-width: 33.33333%;
