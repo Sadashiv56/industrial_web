@@ -17,7 +17,7 @@
 
     <meta charset="UTF-8">
 
-    <title>Industry</title>
+    <title>APMG Plastic Consulting</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('css/linearicons.css') }}">
@@ -102,6 +102,29 @@
 </head>
 
 <body style="position: relative">
+    <div class="callback-icon">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg>
+        </div>
+    </div>
+    <form class="callback-form" action="">
+        <h5>Request a callback</h5>
+        <label for="name">Name</label>
+        <input id="name" type="text"></input>
+        <label for="email">Email</label>
+        <input id="email" type="text"></input>
+        <label for="phone">Phone</label>
+        <input id="phone" type="number"></input>
+        <label for="message">Message</label>
+        <textarea id="message" type="text"></textarea>
+        <div style="display: flex; margin-top:.5rem">
+            <button class="secondary-btn">Send</button>
+        </div>
+    </form>
     @include('layouts.header')
     @include('layouts.sidebar')
     @yield('content')
@@ -132,7 +155,7 @@
         crossorigin="anonymous"></script>
     <script>
         document.getElementById('hamburger').addEventListener('click', () => {
-            if(document.getElementById('sidebarnav').classList.contains('sidevarvisible')){
+            if (document.getElementById('sidebarnav').classList.contains('sidevarvisible')) {
                 document.getElementById('sidebarnav').classList.remove('sidevarvisible');
                 document.getElementById('sidebarnav').classList.add('sidevarhidden');
                 setTimeout(() => {
@@ -144,6 +167,24 @@
                 document.getElementById('sidebarnav').classList.add('sidevarvisible');
             }
         })
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log(anchor)
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const offset = targetElement.offsetTop - (window.innerHeight * .25);
+                    console.log(offset)
+                    window.scrollTo({
+                        top: offset,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 
