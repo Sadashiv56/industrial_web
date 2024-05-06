@@ -16,13 +16,15 @@
                     <a href="#" class="primary-btn header-btn text-uppercase">Get Started</a>
                 </div>
                 <div class="down-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-chevron-double-down"
-                        viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                        <path fill-rule="evenodd"
-                            d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                    </svg>
+                    <a href="#product-item-id">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                            <path fill-rule="evenodd"
+                                d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -68,13 +70,24 @@
             </div>
         </div>
     </section> --}}
-
-    <section class="cat-area section-gap">
-        <div class="container">
-            <h2>
-                Nonafile
-            </h2>
-            <div class="col-6">
+    <section id="tab">
+        <div>
+            <ul class="d-flex">
+                <li class="tab-list-icon"><a href="#product-item-id">Key Feature</a> </li>
+                <li class="tab-list-icon"><a href="#application-gallery-id">Application Gallery</a> </li>
+                <li class="tab-list-icon"><a href="#market-caption-id">Market Sector</a> </li>
+                <li class="tab-list-icon"><a href="#project-id">Project</a> </li>
+                <li class="tab-list-icon"><a href="#feedback-id">Feedback</a> </li>
+                <li class="tab-list-icon"><a href="#quotation-id">Request Quotation</a> </li>
+            </ul>
+        </div>
+    </section>
+    <section id="product-item-id" class="cat-area section-gap container">
+        <h2 style="margin-left: 15px">
+            Nonafile
+        </h2>
+        <div style="display: flex">
+            <div class="col-lg-8 col-md-12">
                 <p>
                     At the forefront of next-generation blown film production, Nonafoil pioneers high-performance recyclable
                     barrier films, addressing plastic waste reduction with advanced nine-layer co-extrusion.
@@ -104,12 +117,14 @@
                     rates.
                 </p>
             </div>
-            <div class="col-6"></div>
+            <div class="col-lg-4 col-md-12">
+                <img class="product-item-img" src="img/product-img.jpg" alt="">
+            </div>
 
         </div>
     </section>
 
-    <section class="blog-area section-gap" id="blog">
+    <section id="application-gallery-id" class="blog-area section-gap" id="blog">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 pb-30 header-text">
@@ -121,229 +136,154 @@
                 </div>
             </div>
             <div class="row">
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
                 </div>
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4 pt-4">
-                    <div class="thumb">
-                        <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt>
-                    </div>
-                    {{-- <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt>
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-lg-4 col-md-4 pt-4">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt>
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
+                        <div class="single-blog-img">
+                            <h5>Heading</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum enim cum, similique hic
+                                reprehenderit
+                            </p>
+                            <a class="secondary-btn" href="#">Read More</a>
                         </div>
                     </div>
-                    <a href="#">
-                        <h4>Portable Fashion for young women</h4>
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip exea.
-                    </p> --}}
+
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <section class="service-area section-gap" id="service">
+    <section id="market-caption-id" class="service-area section-gap" id="service">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 pb-30 header-text text-center">
@@ -393,7 +333,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="faq-area section-gap relative">
         <div class="overlay overlay-bg"></div>
@@ -447,8 +386,7 @@
         </div>
     </section>
 
-
-    <section class="project-area section-gap" id="project">
+    <section id="project-id" class="project-area section-gap" id="project">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 pb-30 header-text text-center">
@@ -484,7 +422,7 @@
     </section>
 
 
-    <section class="feedback-area section-gap relative" id="feedback">
+    <section id="feedback-id" class="feedback-area section-gap relative" id="feedback">
         <div class="overlay overlay-bg"></div>
         <div class="container">
             <div class="row justify-content-center">
@@ -559,7 +497,8 @@
             </div>
         </div>
     </section>
-    <section class="home-about-area section-gap" id="about">
+
+    <section id="quotation-id" class="home-about-area section-gap" id="about">
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-8 col-md-12 home-about-left">
@@ -582,22 +521,22 @@
                     <form class="form-wrap" action="#">
                         <h4 class="text-white pb-20">Request a Quote</h4>
                         <div class="form-select" id="service-select" ">
-                                <select>
-                                <option value="1">Select Service</option>
-                                <option value="2">Service One</option>
-                                <option value="3">Service Two</option>
-                                <option value="4">Service Three</option>
-                                <option value="5">Service Four</option>
-                                </select>
-                                </div>
-                                <input type="text" class="form-control" placeholder="name">
-                                <input type="phone" class="form-control" placeholder="Phone Number">
-                                <input type="email" class="form-control" placeholder="Email Address">
-                                <textarea name="message" id cols="30" rows="5" placeholder="Message" class="form-control"></textarea>
-                                <button class="primary-btn">Request Free Quote</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-        </section>
+                                                                                        <select>
+                                                                                        <option value="1">Select Service</option>
+                                                                                        <option value="2">Service One</option>
+                                                                                        <option value="3">Service Two</option>
+                                                                                        <option value="4">Service Three</option>
+                                                                                        <option value="5">Service Four</option>
+                                                                                        </select>
+                                                                                        </div>
+                                                                                        <input type="text" class="form-control" placeholder="name">
+                                                                                        <input type="phone" class="form-control" placeholder="Phone Number">
+                                                                                        <input type="email" class="form-control" placeholder="Email Address">
+                                                                                        <textarea name="message" id cols="30" rows="5" placeholder="Message" class="form-control"></textarea>
+                                                                                        <button class="primary-btn">Request Free Quote</button>
+                                                                                    </form>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                </section>
 @endsection
